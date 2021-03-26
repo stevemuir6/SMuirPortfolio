@@ -495,11 +495,11 @@ document.getElementById('form')
    );
   }); 
   // API
-  fetch('[Your API URL Here]')
+  fetch('https://steves-blog.herokuapp.com/GetTopXPosts/3')
 .then(response => response.json())
 .then(function(data){    
   let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };    
-  let blogUrl = "[Your Blog URL + Slug Routing]"
+  let blogUrl = "https://steves-blog.herokuapp.com/TheDetails/URLFriendly/"
   let blogAnchor = $("#blog1 > div.card-body > h3 > a");    
   let blogLink = `${blogUrl}${data[0].slug}`;
   blogAnchor.text(data[0].title);
