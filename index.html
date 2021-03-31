@@ -165,7 +165,7 @@
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/blog1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -177,7 +177,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/rubicCube.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -188,8 +188,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          </div> -->
+          <div class="col-sm-2 col-md-6 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/orb.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -494,6 +494,7 @@ document.getElementById('form')
    }
    );
   }); 
+  
   // API
   fetch('https://steves-blog.herokuapp.com/GetTopXPosts/3')
 .then(response => response.json())
@@ -525,7 +526,7 @@ document.getElementById('form')
   $("#blog3 > div.card-body > p").html(data[2].abstract);      
   $("#blog3 > div.card-footer > div > span").text(`Created: ${new Date(data[2].created).toLocaleDateString("en-US", options)}`)
 });
-</script>
+
       
       
  </script>
